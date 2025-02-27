@@ -5,83 +5,406 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syed Furqan Gillani | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
 
-    <!-- Navigation Bar -->
-    <header>
+    <!-- Navbar -->
+    <nav id="navbar">
         <div class="logo">Syed Furqan Gillani</div>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+           
+        </ul>
+        <button id="theme-toggle">🌗</button>
+    </nav>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Syed Furqan Gillani</h1>
-            <p>Full Stack Web Developer | Shopify | WordPress | Webflow</p>
-            <a href="#projects" class="btn">View My Work</a>
+    <!-- Banner Section -->
+<section id="home" class="banner">
+    <div class="banner-content">
+        <h1><span id="typed"></span></h1>
+        <button class="resume-btn">Download Resume</button>
+    </div>
+</section>
+
+
+   <!-- About Section -->
+<section id="about">
+    <h1 style="text-align: center; align-items: center; font-size: 2.5rem;">ABOUT ME</h1>
+    <div class="about-content">
+        <!-- Left Section -->
+        <div class="about-left">
+            <h2>Syed Furqan Gillani</h2>
+            <p>A highly skilled Full Stack Web Developer with extensive experience in front-end, back-end, and mobile app development. Over the years, I have honed my expertise across modern web technologies and frameworks, delivering dynamic and scalable web applications for various industries.
+
+                I specialize in building interactive, performance-driven applications with clean, maintainable code. My core strengths lie in both client-side and server-side development, ensuring seamless user experiences and robust functionality.
+                
+                With a strong command of HTML, CSS (Bootstrap/Tailwind), JavaScript (React.js, Vue.js), and back-end technologies like PHP (Laravel, Symfony, CakePHP), I have successfully led projects from concept to completion while adhering to Agile and Scrum methodologies.
+                
+                I have hands-on experience with e-commerce platforms like Shopify, WordPress, and Webflow, and a solid background in MySQL databases, including stored procedures, SQL injections prevention, and performance optimization.
+                
+                Apart from web development, I am proficient in server management (Linux), version control systems (Git, Bitbucket), and cloud services like AWS.
+                
+                Currently, I am expanding my expertise in React Native and MERN/MEAN stack to build cutting-edge cross-platform mobile applications.
+                
+                With a passion for learning and delivering high-quality digital solutions, I thrive in collaborative environments where creativity meets technology.</p>
+            <p style="font-size: 1.2rem;"><strong>Email: furqan7853@gmail.com</strong></p>
+            <p style="font-size: 1.2rem;"><strong>Phone: +923407853663</strong></p>
         </div>
-    </section>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <div class="about-container">
-            <div class="about-image">
-                <img src="images/profile.jpg" alt="Syed Furqan Gillani">
+        <!-- Middle Section -->
+        <div class="about-middle">
+            <img src="img/furqan.jpeg" alt="Timothy">
+        </div>
+
+        <!-- Right Section -->
+        <div class="about-right">
+            <h1>My Professional Skills</h1>
+            <div class="skill-bar">
+                <span>HTML</span>
+                <div class="progress"><div class="progress-fill" style="width: 98%;">98%</div></div>
             </div>
-            <div class="about-content">
-                <h2>About Me</h2>
-                <p>
-                    I am a **Web Developer** specializing in **front-end and back-end development** with over **4 years of experience**.
-                    I have worked on **dynamic web projects** using **HTML5, CSS, JavaScript, PHP, MySQL** along with platforms like **Shopify, WordPress, and Webflow**.
-                </p>
-                <p>
-                    My skills include **UI/UX design, performance optimization, and building scalable web applications**.
-                    I am passionate about **troubleshooting website issues, maintaining and updating websites**, and staying **up-to-date** with the latest technologies.
-                </p>
-                <ul class="skills-list">
-                    <li>✅ Custom Web Development</li>
-                    <li>✅ Shopify, WordPress & Webflow</li>
-                    <li>✅ UI/UX Responsive Design</li>
-                    <li>✅ Web Performance Optimization</li>
-                    <li>✅ Website Maintenance & SEO</li>
-                </ul>
+            <div class="skill-bar">
+                <span>Css/Bootstrap/Tailwind</span>
+                <div class="progress"><div class="progress-fill" style="width: 98%;">98%</div></div>
+            </div>
+            <div class="skill-bar">
+                <span>Agile/Scrum</span>
+                <div class="progress"><div class="progress-fill" style="width: 95%;">95%</div></div>
+            </div>
+            <div class="skill-bar">
+                <span>JavaScript/Jquery/React.js/Vue.js</span>
+                <div class="progress"><div class="progress-fill" style="width: 95%;">95%</div></div>
+            </div>
+            <div class="skill-bar">
+                <span>PHP/Laravel/Symfony/Cake</span>
+                <div class="progress"><div class="progress-fill" style="width: 98%;">98%</div></div>
+            </div>
+            <div class="skill-bar">
+                <span>Wordpress/Shopify/Webflow</span>
+                <div class="progress"><div class="progress-fill" style="width: 97%;">97%</div></div>
+            </div>
+            <div class="skill-bar">
+                <span>MySql/Sql Injections/Procedures</span>
+                <div class="progress"><div class="progress-fill" style="width: 95%;">95%</div></div>
+            </div>
+          
+            <div class="skill-bar">
+                <span>Version Control (GitHub/BitBucket)</span>
+                <div class="progress"><div class="progress-fill" style="width: 95%;">95%</div></div>
+            </div>
+            <div class="skill-bar">
+                <span>Server Management/linux</span>
+                <div class="progress"><div class="progress-fill" style="width: 95%;">98%</div></div>
+            </div>
+            <div class="skill-bar">
+                <span>Mean/Mern</span>
+                <div class="progress"><div class="progress-fill" style="width: 85%;">85%</div></div>
+            </div>
+            <div class="skill-bar">
+                <span>React Native</span>
+                <div class="progress"><div class="progress-fill" style="width: 75%;">75%</div></div>
+            </div>
+            <div class="skill-bar">
+                <span>AWS</span>
+                <div class="progress"><div class="progress-fill" style="width: 70%;">70%</div></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+ <!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <h2 class="section-title">What I Do</h2>
+        <div class="carousel">
+            <div class="service-card">
+                <i class="fas fa-code fa-3x"></i>
+                <h3>Web Development</h3>
+                <p>Custom Websites and Web Apps using Laravel, React, and Shopify.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-cogs fa-3x"></i>
+                <h3>API Development</h3>
+                <p>RESTful and GraphQL APIs for mobile and web applications.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-shopping-cart fa-3x"></i>
+                <h3>E-commerce Solutions</h3>
+                <p>Online stores built on Shopify, WooCommerce, and Custom Platforms.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-mobile-alt fa-3x"></i>
+                <h3>Mobile App Development</h3>
+                <p>Cross-platform apps using React Native.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-chart-line fa-3x"></i>
+                <h3>SEO Optimization</h3>
+                <p>Boost website ranking with SEO-friendly strategies.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-shield-alt fa-3x"></i>
+                <h3>Web Security & Performance</h3>
+                <p>Website security, performance optimization, and malware removal.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="images/project1.jpg" alt="Project 1">
-                <h3>Portfolio Website</h3>
-                <p>A fully responsive personal portfolio site built using HTML, CSS, and JavaScript.</p>
+
+
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="app">App Development</button>
+            <!-- <button class="filter-btn" data-filter="design">Design</button> -->
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card" data-category="web">
+                <img src="img/bagsy.PNG" alt="Project 1">
+                <div class="project-info">
+                    <h3>Bagsy NY (E-Commerce Website)</h3>
+                    <p>Shopify</p>
+                </div>
             </div>
-            <div class="project-card">
-                <img src="images/project2.jpg" alt="Project 2">
-                <h3>Shopify E-commerce</h3>
-                <p>Developed a high-converting Shopify store with custom theme modifications.</p>
+
+
+            <div class="project-card" data-category="web">
+                <img src="img/vital.PNG" alt="Project 3">
+                <div class="project-info">
+                    <h3>Vital Roots</h3>
+                    <p>PHP-Laravel</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/recipal.PNG" alt="Project 4">
+                <div class="project-info">
+                    <h3>Recipal</h3>
+                    <p>Laravel</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/erideshare.PNG" alt="Project 4">
+                <div class="project-info">
+                    <h3>RiderApp</h3>
+                    <p>Symfony,Vue.js</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/behaviour.PNG" alt="Project 4">
+                <div class="project-info">
+                    <h3>Positive Behaviour Support</h3>
+                    <p>Laravel</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/lionpro.PNG" alt="Project 4">
+                <div class="project-info">
+                    <h3>LionProDev (portfolio)</h3>
+                    <p>Laravel</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/clipboard.PNG" alt="Project 2">
+                <div class="project-info">
+                    <h3>Clipboard Nation</h3>
+                    <p>Wordpress/Laravel</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/mh.PNG" alt="Project 4">
+                <div class="project-info">
+                    <h3>MhTechnologies (portfolio)</h3>
+                    <p>Laravel</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/styleup.PNG" alt="Project 4">
+                <div class="project-info">
+                    <h3>M.styleUp (Ecommerce)</h3>
+                    <p>Laravel</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/sociallock.PNG" alt="Project 4">
+                <div class="project-info">
+                    <h3>SocialLock</h3>
+                    <p>Laravel</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/almufeed.PNG" alt="Project 4">
+                <div class="project-info">
+                    <h3>Almufeed (Ecommerce)</h3>
+                    <p>Laravel</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/busrider.PNG" alt="Project 4">
+                <div class="project-info">
+                    <h3>Bus Rider App</h3>
+                    <p>Symfony, Node, Vue.js</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="app">
+                <img src="img/jive.PNG" alt="Project 4">
+                <div class="project-info">
+                    <h3>Jive Friends (Community app)</h3>
+                    <p>React Native, Laravel, firebase</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="app">
+                <img src="img/goalingo.PNG" alt="Project 4">
+                <div class="project-info">
+                    <h3>Goalingo App</h3>
+                    <p>React Native, Laravel</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="app">
+                <img src="img/weminder.PNG" alt="Project 4">
+                <div class="project-info">
+                    <h3>WeMinder App</h3>
+                    <p>React Native, Laravel</p>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you want to work together, feel free to reach out!</p>
-        <a href="mailto:furqan7853@gmail.com" class="btn">Email Me</a>
-    </section>
 
+  
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Syed Furqan Gillani</h2>
+                <p>Crafting Digital Solutions, Empowering Ideas.</p>
+            </div>
+    
+           
+           
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2025 furqangillani. All Rights Reserved.</p>
+            <div class="footer-social">
+            
+                <div class="social-links">
+                    <br>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                   
+                </div>
+            </div>
+            <a href="#" class="back-to-top">↑ Back to Top</a>
+        </div>
+    </footer>
+    
+
+    <script>
+        // Preloader
+        $(window).on("load", function() {
+            $("#preloader").fadeOut("slow");
+        });
+
+        // Typed.js for banner text
+        new Typed("#typed", {
+            strings: ["Software Engineer", "Full Stack Developer"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+
+        // Theme Toggle
+        document.getElementById("theme-toggle").onclick = function () {
+            document.body.classList.toggle("dark-mode");
+        };
+    </script>
+    <script>
+        window.addEventListener('scroll', function () {
+    const cards = document.querySelectorAll('.service-card');
+    cards.forEach(card => {
+        const cardPos = card.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (cardPos < windowHeight - 100) {
+            card.classList.add('show');
+        }
+    });
+});
+
+    </script>
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelector('.filter-btn.active').classList.remove('active');
+        button.classList.add('active');
+
+        const filter = button.dataset.filter;
+
+        projectCards.forEach(card => {
+            if (filter === 'all' || card.dataset.category === filter) {
+                card.style.display = 'block';
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                }, 200);
+            } else {
+                card.style.opacity = '0';
+                setTimeout(() => {
+                    card.style.display = 'none';
+                }, 200);
+            }
+        });
+    });
+});
+const backToTop = document.querySelector('.back-to-top');
+
+backToTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+    </script>
 </body>
 </html>
