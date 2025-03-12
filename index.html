@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,29 +16,25 @@
     <div id="preloader">
         <div class="loader"></div>
     </div>
-
     <!-- Navbar -->
     <nav id="navbar">
         <div class="logo">Syed Furqan Gillani</div>
+        <button id="menu-toggle" class="menu-toggle">☰</button>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-           
         </ul>
         <button id="theme-toggle">🌗</button>
     </nav>
-
     <!-- Banner Section -->
 <section id="home" class="banner">
     <div class="banner-content">
         <h1><span id="typed"></span></h1>
-        <button class="resume-btn">Download Resume</button>
+<!--        <button class="resume-btn">Download Resume</button>-->
     </div>
 </section>
-
-
    <!-- About Section -->
 <section id="about">
     <h1 style="text-align: center; align-items: center; font-size: 2.5rem;">ABOUT ME</h1>
@@ -124,8 +120,6 @@
         </div>
     </div>
 </section>
-
-
  <!-- Services Section -->
 <section id="services">
     <div class="container">
@@ -169,152 +163,11 @@
         </div>
     </div>
 </section>
-
-
-
-<section id="projects">
-    <div class="container">
-        <h2 class="section-title">Portfolio</h2>
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="web">Web Development</button>
-            <button class="filter-btn" data-filter="app">App Development</button>
-            <!-- <button class="filter-btn" data-filter="design">Design</button> -->
-        </div>
-
-        <div class="projects-grid">
-            <div class="project-card" data-category="web">
-                <img src="img/bagsy.PNG" alt="Project 1">
-                <div class="project-info">
-                    <h3>Bagsy NY (E-Commerce Website)</h3>
-                    <p>Shopify</p>
-                </div>
-            </div>
-
-
-            <div class="project-card" data-category="web">
-                <img src="img/vital.PNG" alt="Project 3">
-                <div class="project-info">
-                    <h3>Vital Roots</h3>
-                    <p>PHP-Laravel</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/recipal.PNG" alt="Project 4">
-                <div class="project-info">
-                    <h3>Recipal</h3>
-                    <p>Laravel</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/erideshare.PNG" alt="Project 4">
-                <div class="project-info">
-                    <h3>RiderApp</h3>
-                    <p>Symfony,Vue.js</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/behaviour.PNG" alt="Project 4">
-                <div class="project-info">
-                    <h3>Positive Behaviour Support</h3>
-                    <p>Laravel</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/lionpro.PNG" alt="Project 4">
-                <div class="project-info">
-                    <h3>LionProDev (portfolio)</h3>
-                    <p>Laravel</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/clipboard.PNG" alt="Project 2">
-                <div class="project-info">
-                    <h3>Clipboard Nation</h3>
-                    <p>Wordpress/Laravel</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/mh.PNG" alt="Project 4">
-                <div class="project-info">
-                    <h3>MhTechnologies (portfolio)</h3>
-                    <p>Laravel</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/styleup.PNG" alt="Project 4">
-                <div class="project-info">
-                    <h3>M.styleUp (Ecommerce)</h3>
-                    <p>Laravel</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/sociallock.PNG" alt="Project 4">
-                <div class="project-info">
-                    <h3>SocialLock</h3>
-                    <p>Laravel</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/almufeed.PNG" alt="Project 4">
-                <div class="project-info">
-                    <h3>Almufeed (Ecommerce)</h3>
-                    <p>Laravel</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/busrider.PNG" alt="Project 4">
-                <div class="project-info">
-                    <h3>Bus Rider App</h3>
-                    <p>Symfony, Node, Vue.js</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="app">
-                <img src="img/jive.PNG" alt="Project 4">
-                <div class="project-info">
-                    <h3>Jive Friends (Community app)</h3>
-                    <p>React Native, Laravel, firebase</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="app">
-                <img src="img/goalingo.PNG" alt="Project 4">
-                <div class="project-info">
-                    <h3>Goalingo App</h3>
-                    <p>React Native, Laravel</p>
-                </div>
-            </div>
-
-            <div class="project-card" data-category="app">
-                <img src="img/weminder.PNG" alt="Project 4">
-                <div class="project-info">
-                    <h3>WeMinder App</h3>
-                    <p>React Native, Laravel</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-  
-    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
                 <h2>Syed Furqan Gillani</h2>
-                <p>Crafting Digital Solutions, Empowering Ideas.</p>
+                <p>Software Engineer | Full Stack Developer</p>
             </div>
     
            
@@ -335,8 +188,6 @@
             <a href="#" class="back-to-top">↑ Back to Top</a>
         </div>
     </footer>
-    
-
     <script>
         // Preloader
         $(window).on("load", function() {
@@ -345,9 +196,9 @@
 
         // Typed.js for banner text
         new Typed("#typed", {
-            strings: ["Software Engineer", "Full Stack Developer"],
+            strings: ["Crafting Digital Solutions, Empowering Ideas.", "Transforming Ideas into Digital Masterpieces."],
             typeSpeed: 50,
-            backSpeed: 50,
+            backSpeed: 30,
             loop: true
         });
 
@@ -406,5 +257,14 @@ backToTop.addEventListener('click', () => {
 });
 
     </script>
+
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    });
+   </script>
 </body>
+
 </html>

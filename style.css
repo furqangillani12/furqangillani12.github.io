@@ -25,7 +25,14 @@ nav {
     top: 0;
     z-index: 1000;
 }
-
+.menu-toggle {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 .nav-links {
     display: flex;
     list-style: none;
@@ -46,13 +53,33 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     text-align: center;
-    background: url('img/banner.png') no-repeat center center/cover;
+    background: url('img/banner5.png') no-repeat center center/cover;
     color: white;
     position: relative;
 }
+/* Mobile Navbar */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show burger menu */
+    }
 
+    .nav-links {
+        display: none; /* Hide nav links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show nav links when active */
+    }
+}
 .banner-content {
     display: flex;
     flex-direction: column; /* Ensures h1 and button are in separate rows */
@@ -89,13 +116,13 @@ nav {
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: start;
-    text-align: center;
+
+
     gap: 50px;
     max-width: 1200px;
     margin: auto;
     padding: 40px 0;
-    animation: fade-in 1.5s ease-in-out;
+
 }
 
 .about-left {
@@ -110,6 +137,7 @@ nav {
 
 .about-left p {
     margin: 10px 0;
+    padding: 26px;
     font-size: 1rem;
     line-height: 21px;
     color: #646464!important;
@@ -138,7 +166,65 @@ nav {
     font-size: 2rem;
     color: #333;
 }
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr; /* Stack sections vertically */
+        text-align: center;
+    }
 
+    .about-left,
+    .about-right {
+        text-align: center; /* Center text on mobile */
+        padding: 40px;
+    }
+
+    .about-middle img {
+        width: 200px;
+        height: 200px;
+    }
+}
+/* Banner Section */
+.banner h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+}
+
+/* Services Section */
+.carousel {
+    grid-template-columns: 1fr; /* Stack service cards vertically on mobile */
+}
+
+/* Footer */
+.footer-container {
+    grid-template-columns: 1fr; /* Stack footer content vertically on mobile */
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 .skill-bar {
     margin: 15px 0;
     text-align: left;
