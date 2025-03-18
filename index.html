@@ -26,23 +26,30 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
         </ul>
-        <button id="theme-toggle">🌗</button>
+
     </nav>
     <!-- Banner Section -->
-<section id="home" class="banner">
-    <div class="banner-content">
-        <h1><span id="typed"></span></h1>
-<!--        <button class="resume-btn">Download Resume</button>-->
-    </div>
-</section>
+    <!-- Banner Section -->
+    <section id="home" class="banner">
+        <!-- Background Video -->
+        <video autoplay muted loop id="banner-video">
+            <source src="img/bannervideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="banner-content">
+            <h1><span id="typed"></span></h1>
+            <!-- <button class="resume-btn">Download Resume</button> -->
+        </div>
+    </section>
+
    <!-- About Section -->
-<section id="about">
-    <h1 style="text-align: center; align-items: center; font-size: 2.5rem;">ABOUT ME</h1>
+<section id="about" style="color: #ffffffff; background-color: #000000">
+    <h1 style="text-align: center; align-items: center; font-size: 2.5rem; color: #f4a261;">ABOUT ME</h1>
     <div class="about-content">
         <!-- Left Section -->
-        <div class="about-left">
-            <h2>Syed Furqan Gillani</h2>
-            <p>A highly skilled Full Stack Web Developer with extensive experience in front-end, back-end, and mobile app development. Over the years, I have honed my expertise across modern web technologies and frameworks, delivering dynamic and scalable web applications for various industries.
+        <div class="about-left" >
+            <h2 style="color: #f4a261;">Syed Furqan Gillani</h2>
+            <p style="color: #f4a261">A highly skilled Full Stack Web Developer with extensive experience in front-end, back-end, and mobile app development. Over the years, I have honed my expertise across modern web technologies and frameworks, delivering dynamic and scalable web applications for various industries.
 
                 I specialize in building interactive, performance-driven applications with clean, maintainable code. My core strengths lie in both client-side and server-side development, ensuring seamless user experiences and robust functionality.
                 
@@ -66,7 +73,7 @@
 
         <!-- Right Section -->
         <div class="about-right">
-            <h1>My Professional Skills</h1>
+            <h1 style="color: #f4a261">My Professional Skills</h1>
             <div class="skill-bar">
                 <span>HTML</span>
                 <div class="progress"><div class="progress-fill" style="width: 98%;">98%</div></div>
@@ -121,9 +128,9 @@
     </div>
 </section>
  <!-- Services Section -->
-<section id="services">
+<section id="services" style="background-color: black">
     <div class="container">
-        <h2 class="section-title">What I Do</h2>
+        <h2 style="color: #f4a261!important;" class="section-title">What I Do</h2>
         <div class="carousel">
             <div class="service-card">
                 <i class="fas fa-code fa-3x"></i>
@@ -165,8 +172,8 @@
 </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2 class="section-title">Portfolio</h2>
+    <section id="portfolio" style="background-color: black;">
+        <h2 style="color: #f4a261!important;" class="section-title">Portfolio</h2>
         <div class="filter-buttons">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="web">Web Development</button>
@@ -174,33 +181,181 @@
         </div>
         <div class="projects-grid">
             <!-- Project 1 -->
-            <a href="https://example.com/project1" target="_blank">
             <div class="project-card" data-category="web">
                 <img src="img/recipal.PNG" alt="Web Development Project">
                 <div class="project-info">
                     <h3>Powerful Tools for Game Planning</h3>
                     <p>Custom software for game planning and strategy.</p>
+
                 </div>
+                <a href="https://recipal.mhtechnologies.us/" target="_blank" class="link-icon">&#128279;</a>
             </div>
-            </a>
             <!-- Project 2 -->
-            <div class="project-card" data-category="app">
-                <img src="img/behaviour.PNG" alt="App Development Project">
+            <div class="project-card" data-category="web">
+                <img src="img/behaviour.PNG" alt="Web Development Project">
                 <div class="project-info">
                     <h3>Customer Software & Massive Arms</h3>
                     <p>Detached from the lot of your buildings payment.</p>
+
                 </div>
+                <a href="https://app.behaviourhelp.com/" target="_blank" class="link-icon">&#128279;</a>
             </div>
             <!-- Project 3 -->
+
+            <!-- Add more projects as needed -->
+            <div class="project-card" data-category="web">
+                <img src="img/clipboard.PNG" alt="Web Development Project">
+                <div class="project-info">
+                    <h3>Bring Your Brilliant Ideas to the World</h3>
+                    <p>Seize your digital footprint with innovative solutions.</p>
+
+                </div>
+                <a href="https://www.clipboardnation.com/" target="_blank" class="link-icon">&#128279;</a>
+            </div>
+
             <div class="project-card" data-category="web">
                 <img src="img/busrider.PNG" alt="Web Development Project">
                 <div class="project-info">
                     <h3>Bring Your Brilliant Ideas to the World</h3>
                     <p>Seize your digital footprint with innovative solutions.</p>
+
                 </div>
+                <a href="https://emotorcoach.net/" target="_blank" class="link-icon">&#128279;</a>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/erideshare.PNG" alt="Web Development Project">
+                <div class="project-info">
+                    <h3>Bring Your Brilliant Ideas to the World</h3>
+                    <p>Seize your digital footprint with innovative solutions.</p>
+
+                </div>
+                <a href="https://erideshare.net/" target="_blank" class="link-icon">&#128279;</a>
+            </div>
+
+            <div class="project-card" data-category="app">
+                <img src="img/goalingo.PNG" alt="Web Development Project">
+                <div class="project-info">
+                    <h3>Bring Your Brilliant Ideas to the World</h3>
+                    <p>Seize your digital footprint with innovative solutions.</p>
+
+                </div>
+                <a href="#" target="_blank" class="link-icon">&#128279;</a>
+            </div>
+
+            <div class="project-card" data-category="app">
+                <img src="img/jive.PNG" alt="Web Development Project">
+                <div class="project-info">
+                    <h3>Bring Your Brilliant Ideas to the World</h3>
+                    <p>Seize your digital footprint with innovative solutions.</p>
+
+                </div>
+                <a href="https://apps.apple.com/us/app/jive-friends/id6466036309" target="_blank" class="link-icon">&#128279;</a>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/lionpro.PNG" alt="Web Development Project">
+                <div class="project-info">
+                    <h3>Bring Your Brilliant Ideas to the World</h3>
+                    <p>Seize your digital footprint with innovative solutions.</p>
+
+                </div>
+                <a href="https://lionprodev.com/" target="_blank" class="link-icon">&#128279;</a>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/mh.PNG" alt="Web Development Project">
+                <div class="project-info">
+                    <h3>Bring Your Brilliant Ideas to the World</h3>
+                    <p>Seize your digital footprint with innovative solutions.</p>
+
+                </div>
+                <a href="https://mhtechnologies.us/" target="_blank" class="link-icon">&#128279;</a>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/sociallock.PNG" alt="Web Development Project">
+                <div class="project-info">
+                    <h3>Bring Your Brilliant Ideas to the World</h3>
+                    <p>Seize your digital footprint with innovative solutions.</p>
+
+                </div>
+                <a href="https://socialock.co/" target="_blank" class="link-icon">&#128279;</a>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/styleup.PNG" alt="Web Development Project">
+                <div class="project-info">
+                    <h3>Bring Your Brilliant Ideas to the World</h3>
+                    <p>Seize your digital footprint with innovative solutions.</p>
+
+                </div>
+                <a href="https://m.mstyleup.com/" target="_blank" class="link-icon">&#128279;</a>
+            </div>
+
+            <div class="project-card" data-category="app">
+                <img src="img/weminder.PNG" alt="Web Development Project">
+                <div class="project-info">
+                    <h3>Bring Your Brilliant Ideas to the World</h3>
+                    <p>Seize your digital footprint with innovative solutions.</p>
+
+                </div>
+                <a href="#" target="_blank" class="link-icon">&#128279;</a>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/almufeed.PNG" alt="Web Development Project">
+                <div class="project-info">
+                    <h3>Bring Your Brilliant Ideas to the World</h3>
+                    <p>Seize your digital footprint with innovative solutions.</p>
+
+                </div>
+                <a href="https://almufeed.com.pk/" target="_blank" class="link-icon">&#128279;</a>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/bagsy.PNG" alt="Web Development Project">
+                <div class="project-info">
+                    <h3>Bring Your Brilliant Ideas to the World</h3>
+                    <p>Seize your digital footprint with innovative solutions.</p>
+
+                </div>
+                <a href="https://bagsyny.com/" target="_blank" class="link-icon">&#128279;</a>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/boyscout.PNG" alt="Web Development Project">
+                <div class="project-info">
+                    <h3>Bring Your Brilliant Ideas to the World</h3>
+                    <p>Seize your digital footprint with innovative solutions.</p>
+
+                </div>
+                <a href="https://mapper.boyscoutimages.org/" target="_blank" class="link-icon">&#128279;</a>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/vital.PNG" alt="Web Development Project">
+                <div class="project-info">
+                    <h3>Bring Your Brilliant Ideas to the World</h3>
+                    <p>Seize your digital footprint with innovative solutions.</p>
+
+                </div>
+                <a href="https://vitalroots.fit/" target="_blank" class="link-icon">&#128279;</a>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <img src="img/pixium.PNG" alt="Web Development Project">
+                <div class="project-info">
+                    <h3>Bring Your Brilliant Ideas to the World</h3>
+                    <p>Seize your digital footprint with innovative solutions.</p>
+
+                </div>
+                <a href="https://pixium.mhtechnologies.us/" target="_blank" class="link-icon">&#128279;</a>
             </div>
         </div>
     </section>
+
+
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
