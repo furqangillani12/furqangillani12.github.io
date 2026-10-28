@@ -1,523 +1,756 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Furqan Gillani | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome CDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Syed Furqan Gillani | Solution Architect &amp; Full Stack Software Engineer</title>
+  <meta name="description" content="Syed Furqan Gillani is a Solution Architect and Full Stack Software Engineer with about 8 years of experience designing and building SaaS platforms, commerce and POS systems, APIs and mobile apps with Laravel, Symfony, Node.js, React, Vue, React Native and Flutter, deployed on AWS and Azure with Docker and CI/CD.">
+  <link rel="canonical" href="https://furqangillani12.github.io/">
+  <meta name="theme-color" content="#2A0F1D">
+  <meta name="author" content="Syed Furqan Gillani">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://furqangillani12.github.io/">
+  <meta property="og:title" content="Syed Furqan Gillani | Solution Architect & Full Stack Software Engineer">
+  <meta property="og:description" content="I design and build software that solves real business problems: application architecture, full-stack engineering and product development.">
+  <meta property="og:image" content="https://furqangillani12.github.io/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Syed Furqan Gillani",
+    "jobTitle": "Solution Architect and Full Stack Software Engineer",
+    "url": "https://furqangillani12.github.io/",
+    "email": "mailto:furqan7853@gmail.com",
+    "image": "https://furqangillani12.github.io/img/work/furqan.webp",
+    "sameAs": ["https://www.linkedin.com/in/syed-furqan-gillani-34a6a8186/", "https://github.com/furqangillani12"],
+    "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Air University"}, {"@type": "CollegeOrUniversity", "name": "Superior College"}],
+    "knowsAbout": ["Software architecture", "AI",  "Laravel", "Symfony", "Node.js", "React", "Vue.js", "MySQL", "PostgreSQL", "MongoDB", "SQLite", "Firebase", "Supabase", "React Native", "Flutter", "AWS", "Azure", "Docker", "CI/CD"]
+  }
+  </script>
 </head>
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader"></div>
-    </div>
-    <!-- Navbar -->
-    <nav id="navbar">
-        <div class="logo">Syed Furqan Gillani</div>
-        <button id="menu-toggle" class="menu-toggle">☰</button>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="wordmark" href="#top" aria-label="Syed Furqan Gillani, back to top">
+        <img class="wordmark-logo" src="img/logo-sfg.webp" width="113" height="96" alt="" aria-hidden="true">
+        <span class="wordmark-name">Syed Furqan Gillani</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-label">Menu</span>
+          <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#capabilities">Capabilities</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="nav-cta-item"><a class="btn btn-small" href="#contact">Get in touch</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
 
-    </nav>
-    <!-- Banner Section -->
-    <!-- Banner Section -->
-    <section id="home" class="banner">
-        <!-- Background Video -->
-        <video autoplay muted loop id="banner-video">
-            <source src="img/bannervideo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="banner-content">
-            <h1><span id="typed"></span></h1>
-            <!-- <button class="resume-btn">Download Resume</button> -->
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow hero-step" style="--i:0"><span class="dot" aria-hidden="true"></span>Solution Architect <span class="sep" aria-hidden="true">/</span> Full Stack Software Engineer</p>
+          <h1 id="hero-title" class="hero-title hero-step" style="--i:1">
+            I design and build software that solves <em>real business problems.</em>
+          </h1>
+          <p class="hero-lede hero-step" style="--i:2">
+            For about eight years I have worked across application architecture, full-stack engineering and product development:
+            turning loosely defined requirements into SaaS platforms, commerce and point of sale systems, booking platforms and mobile apps, and running the cloud infrastructure and delivery pipelines they ship on.
+          </p>
+          <div class="hero-actions hero-step" style="--i:3">
+            <a class="btn" href="#work">Explore my work</a>
+            <a class="btn btn-ghost" href="#contact">Let's discuss a project</a>
+          </div>
         </div>
+
+        <figure class="hero-figure hero-step" style="--i:2">
+          <svg class="arch" viewBox="0 0 520 540" role="img" aria-labelledby="arch-title arch-desc">
+            <title id="arch-title">Reference architecture diagram</title>
+            <desc id="arch-desc">Web and mobile clients send requests to an API layer with authentication. The API calls domain services for orders, payments and notifications. Slow work is pushed to a Redis queue and handled by background workers. Data is stored in MySQL and object storage.</desc>
+
+            <g class="arch-grid" aria-hidden="true">
+              <path d="M0 90H520M0 200H520M0 310H520M0 420H520" />
+            </g>
+
+            <g class="arch-links" aria-hidden="true">
+              <path class="link" pathLength="100" d="M130 76V150" />
+              <path class="link" pathLength="100" d="M390 76V150" />
+              <path class="link" pathLength="100" d="M260 196V218H95V250" />
+              <path class="link" pathLength="100" d="M260 196V250" />
+              <path class="link" pathLength="100" d="M260 196V218H425V250" />
+              <path class="link link-async" pathLength="100" d="M95 296V360" />
+              <path class="link link-async" pathLength="100" d="M425 296V330H330V360" />
+              <path class="link link-async" pathLength="100" d="M190 383H330" />
+              <path class="link" pathLength="100" d="M260 296V340H200V360" />
+              <path class="link" pathLength="100" d="M95 406V470" />
+              <path class="link" pathLength="100" d="M425 406V470" />
+            </g>
+            <g class="arch-pulses" aria-hidden="true">
+              <path class="pulse" pathLength="100" d="M130 76V150" />
+              <path class="pulse" pathLength="100" d="M260 196V250" style="--d:.6s" />
+              <path class="pulse pulse-warm" pathLength="100" d="M425 296V330H330V360" style="--d:1.2s" />
+              <path class="pulse pulse-sky" pathLength="100" d="M95 406V470" style="--d:1.8s" />
+            </g>
+
+            <g class="arch-nodes">
+              <g class="node node-sky" style="--n:0"><rect x="40" y="30" width="180" height="46" rx="8"/><text x="58" y="58">Web app</text><text class="node-meta" x="202" y="58" text-anchor="end">React / Vue</text></g>
+              <g class="node node-sky" style="--n:1"><rect x="300" y="30" width="180" height="46" rx="8"/><text x="318" y="58">Mobile</text><text class="node-meta" x="462" y="58" text-anchor="end">RN / Flutter</text></g>
+
+              <g class="node node-key" style="--n:2"><rect x="40" y="150" width="440" height="46" rx="8"/><text x="58" y="178">API layer</text><text class="node-meta" x="462" y="178" text-anchor="end">REST / auth / rate limits</text></g>
+
+              <g class="node" style="--n:3"><rect x="30" y="250" width="130" height="46" rx="8"/><text x="46" y="278">Orders</text></g>
+              <g class="node" style="--n:4"><rect x="195" y="250" width="130" height="46" rx="8"/><text x="211" y="278">Payments</text></g>
+              <g class="node" style="--n:5"><rect x="360" y="250" width="130" height="46" rx="8"/><text x="376" y="278">Notifications</text></g>
+
+              <g class="node node-coral" style="--n:6"><rect x="30" y="360" width="160" height="46" rx="8"/><text x="46" y="388">Queue</text><text class="node-meta" x="176" y="388" text-anchor="end">Redis</text></g>
+              <g class="node node-amber" style="--n:7"><rect x="330" y="360" width="160" height="46" rx="8"/><text x="346" y="388">Workers</text><text class="node-meta" x="476" y="388" text-anchor="end">jobs</text></g>
+
+              <g class="node node-data" style="--n:8"><rect x="30" y="470" width="160" height="46" rx="8"/><text x="46" y="498">MySQL</text><text class="node-meta" x="176" y="498" text-anchor="end">primary</text></g>
+              <g class="node node-data" style="--n:9"><rect x="330" y="470" width="160" height="46" rx="8"/><text x="346" y="498">Object storage</text></g>
+            </g>
+
+            <g class="arch-notes" aria-hidden="true">
+              <text x="200" y="232">sync</text>
+              <text x="214" y="376">async, retried</text>
+            </g>
+          </svg>
+          <figcaption><span class="mono">Fig. 01</span> A reference shape for the commerce and SaaS platforms I build: synchronous where users wait, asynchronous where they should not.</figcaption>
+        </figure>
+      </div>
+
+      <div class="container">
+        <dl class="hero-facts">
+          <div style="--c: var(--rose)"><dt>Experience</dt><dd>~8 years</dd></div>
+          <div style="--c: var(--amber)"><dt>Core stack</dt><dd>Laravel, Symfony, Node.js</dd></div>
+          <div style="--c: var(--coral)"><dt>Interfaces</dt><dd>React, Vue, React Native, Flutter</dd></div>
+          <div style="--c: var(--sky)"><dt>DevOps</dt><dd>AWS, Azure, Docker, CI/CD</dd></div>
+        </dl>
+      </div>
     </section>
 
-   <!-- About Section -->
-<section id="about" style="color: #ffffffff; background-color: #000000">
-    <h1 style="text-align: center; align-items: center; font-size: 2.5rem; color: #f4a261;">ABOUT ME</h1>
-    <div class="about-content">
-        <!-- Left Section -->
-        <div class="about-left" >
-            <h2 style="color: #f4a261;">Syed Furqan Gillani</h2>
-            <p style="color: #f4a261">A highly skilled Full Stack Web Developer with extensive experience in front-end, back-end, and mobile app development. Over the years, I have honed my expertise across modern web technologies and frameworks, delivering dynamic and scalable web applications for various industries.
+    <!-- Selected work -->
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-index mono">01</p>
+          <h2 id="work-title" class="section-title">Selected work</h2>
+          <p class="section-intro">Products I have designed, built and shipped. My own products are shown as they are. Client and company work appears under descriptive names with illustrative visuals, to respect confidentiality.</p>
+        </header>
 
-                I specialize in building interactive, performance-driven applications with clean, maintainable code. My core strengths lie in both client-side and server-side development, ensuring seamless user experiences and robust functionality.
-                
-                With a strong command of HTML, CSS (Bootstrap/Tailwind), JavaScript (React.js, Vue.js), and back-end technologies like PHP (Laravel, Symfony, CakePHP), I have successfully led projects from concept to completion while adhering to Agile and Scrum methodologies.
-                
-                I have hands-on experience with e-commerce platforms like Shopify, WordPress, and Webflow, and a solid background in MySQL databases, including stored procedures, SQL injections prevention, and performance optimization.
-                
-                Apart from web development, I am proficient in server management (Linux), version control systems (Git, Bitbucket), and cloud services like AWS.
-                
-                Currently, I am expanding my expertise in React Native and MERN/MEAN stack to build cutting-edge cross-platform mobile applications.
-                
-                With a passion for learning and delivering high-quality digital solutions, I thrive in collaborative environments where creativity meets technology.</p>
-            <p style="font-size: 1.2rem;"><strong>Email: furqan7853@gmail.com</strong></p>
-            <p style="font-size: 1.2rem;"><strong>Phone: +923407853663</strong></p>
+        <header class="sub-head reveal">
+          <h3 class="sub-title">Own products</h3>
+          <p>Built, deployed and run end to end.</p>
+        </header>
+
+        <!-- Almufeed (own product) -->
+        <article class="case reveal" style="--accent: var(--amber); --accent-deep: var(--amber-deep); --accent-tint: var(--amber-tint)" aria-labelledby="case-almufeed">
+          <div class="case-media">
+            <div class="browser">
+              <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+              <picture>
+                <source media="(max-width: 700px)" srcset="img/work/almufeed-sm.webp">
+                <img src="img/work/almufeed.webp" width="1400" height="875" loading="lazy" decoding="async" alt="Almufeed Traders online store home page with category browsing and a product count of over 1418 items.">
+              </picture>
+            </div>
+            <div class="case-stack-thumbs case-stack-single">
+              <figure class="browser browser-mini">
+                <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+                <img src="img/work/pos-sm.webp" width="700" height="438" loading="lazy" decoding="async" alt="Almufeed Point Of Sale landing page: one platform to run every branch, with POS, inventory, khata, payroll and accounting.">
+              </figure>
+            </div>
+          </div>
+          <div class="case-body">
+            <p class="case-meta mono"><span>Case 01</span><span>Retail / Commerce + POS</span></p>
+            <h3 id="case-almufeed" class="case-title">Almufeed Traders: online store and multi-branch point of sale</h3>
+            <dl class="case-details">
+              <div><dt>Problem</dt><dd>A retailer selling books, Qurans, fragrances and more needed to sell online and run several physical branches, with stock, credit and accounts in one place instead of spread across registers and notebooks.</dd></div>
+              <div><dt>The system</dt><dd>Two Laravel applications. The storefront handles a catalogue of more than 1,400 products across categories with a live cart. The POS covers barcode checkout with tier and weight-based pricing and thermal receipts, per-branch stock with low-stock alerts, a khata credit ledger with limits and due dates, payroll and accounting.</dd></div>
+              <div><dt>Key challenges</dt><dd>Making every record branch-aware while letting one account switch between branches, keeping an auditable stock history, and modelling the local khata credit practice with statements and overdue tracking. Excel import and export and barcode generation ease migration from existing records.</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>Alpine.js</li><li>Tailwind CSS</li><li>MySQL</li><li>Multi-branch</li></ul>
+          </div>
+        </article>
+
+        <!-- GravCare (own product) -->
+        <article class="case case-flip reveal" style="--accent: var(--coral); --accent-deep: var(--coral-deep); --accent-tint: var(--coral-tint)" aria-labelledby="case-gravcare">
+          <div class="case-media">
+            <div class="browser">
+              <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+              <picture>
+                <source media="(max-width: 700px)" srcset="img/work/gravcare-sm.webp">
+                <img src="img/work/gravcare.webp" width="1400" height="875" loading="lazy" decoding="async" alt="GravCare home page: when you cannot be there, we tend the place you hold dear, with GPS-verified visits and pay after proof.">
+              </picture>
+            </div>
+          </div>
+          <div class="case-body">
+            <p class="case-meta mono"><span>Case 02</span><span>Service platform / Trust</span></p>
+            <h3 id="case-gravcare" class="case-title">GravCare: verified grave care for families who live far away</h3>
+            <dl class="case-details">
+              <div><dt>Problem</dt><dd>Families living abroad cannot visit the graves of loved ones, and have no reliable way to know whether paid caretakers actually did the work.</dd></div>
+              <div><dt>The system</dt><dd>A Laravel platform where families request cleaning, prayers and fresh flowers from service packages. Every visit is GPS-verified and documented with before and after photos and video, and customers pay only after the proof arrives.</dd></div>
+              <div><dt>Key challenges</dt><dd>Building trust into the workflow itself: location-stamped visit evidence, media uploads from the field, and a pay-after-proof flow that has to handle the order, the visit and the payment as separate steps.</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>GPS verification</li><li>Media uploads</li><li>Payments</li></ul>
+          </div>
+        </article>
+
+        <!-- Own storefronts -->
+        <div class="group group-tight reveal">
+          <ul class="card-grid card-grid-2">
+            <li class="card case-card" style="--accent: var(--teal); --accent-deep: var(--teal-deep)">
+              <img src="img/work/salal-sm.webp" width="700" height="438" loading="lazy" decoding="async" alt="Salal Collection storefront hero: quality and affordability in every box, with skincare products in green gift packaging.">
+              <div class="card-body">
+                <p class="card-kicker mono">Own product / Skincare &amp; beauty</p>
+                <h4>Salal Collection: a direct-to-customer beauty store</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>A skincare and beauty brand needed a store of its own to sell face washes, creams, serums and fragrances and deliver them across Pakistan.</dd></div>
+                  <div><dt>The system</dt><dd>A Laravel storefront with category browsing, product pages, a live mini cart, customer accounts and nationwide delivery.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Keeping the cart and catalogue responsive without a heavy frontend by using Alpine.js over server-rendered pages, and building on the same storefront foundation as Almufeed so improvements reach both stores.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>Alpine.js</li><li>Tailwind CSS</li><li>MySQL</li></ul>
+              </div>
+            </li>
+            <li class="card case-card" style="--accent: var(--amber); --accent-deep: var(--amber-deep)">
+              <img src="img/work/revalaunch-sm.webp" width="700" height="438" loading="lazy" decoding="async" alt="Revalaunch storefront hero: pure ingredients, healthy skin, handcrafted natural soaps.">
+              <div class="card-body">
+                <p class="card-kicker mono">Own product / Handcrafted soaps</p>
+                <h4>Revalaunch: a storefront for a natural soap brand</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>A handcrafted soap brand with many product lines, from bar and organic soaps to kids' ranges and gift boxes, needed a store that makes a large range easy to browse and buy.</dd></div>
+                  <div><dt>The system</dt><dd>A Laravel storefront with category navigation across every collection, gift boxes, a wishlist, order tracking, customer accounts and a direct WhatsApp contact.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Organising many collections into clear navigation, letting customers track orders without having to call, and keeping image-heavy pages fast.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>Alpine.js</li><li>Tailwind CSS</li><li>MySQL</li></ul>
+              </div>
+            </li>
+          </ul>
         </div>
 
-        <!-- Middle Section -->
-        <div class="about-middle">
-            <img src="img/furqan.jpeg" alt="Timothy">
+        <header class="sub-head sub-head-spaced reveal">
+          <h3 class="sub-title">Client &amp; company work</h3>
+          <p>Renamed by concept. Visuals are illustrations, not screenshots.</p>
+        </header>
+
+        <!-- Company: AI proposal platform -->
+        <article class="case reveal" style="--accent: var(--teal); --accent-deep: var(--teal-deep); --accent-tint: var(--teal-tint)" aria-labelledby="case-bidforge">
+          <div class="case-media">
+            <div class="browser">
+              <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+              <img src="img/illustrations/bidforge.svg" width="1600" height="900" loading="lazy" decoding="async" alt="Illustration of a proposal platform: an opportunity list with match scores, a compliance matrix and a submission package being assembled.">
+            </div>
+          </div>
+          <div class="case-body">
+            <p class="case-meta mono"><span>Case 03</span><span>GovTech / AI SaaS</span></p>
+            <h3 id="case-bidforge" class="case-title">BidForge: AI-assisted proposals for public-sector contractors</h3>
+            <dl class="case-details">
+              <div><dt>Problem</dt><dd>Responding to government solicitations means finding the right bids, reading long RFPs, tracking every requirement and assembling forms by hand. It takes days per bid.</dd></div>
+              <div><dt>The system</dt><dd>A subscription platform that pulls opportunities from public procurement feeds, decodes each solicitation into a compliance matrix, maps requirements to the contractor's profile, drafts and prices the response and assembles a submission-ready package.</dd></div>
+              <div><dt>Key challenges</dt><dd>Parsing unstructured PDF, DOCX and XLSX solicitations reliably, keeping AI-generated content traceable to each requirement, and supporting different procurement formats and classification codes.</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Capabilities"><li>AI document processing</li><li>Data feed integrations</li><li>Subscriptions</li></ul>
+          </div>
+        </article>
+
+        <!-- Company: buyer intelligence -->
+        <article class="case case-flip reveal" style="--accent: var(--sky); --accent-deep: var(--sky-deep); --accent-tint: var(--sky-tint)" aria-labelledby="case-buyermap">
+          <div class="case-media">
+            <div class="browser">
+              <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+              <img src="img/illustrations/buyermap.svg" width="1600" height="900" loading="lazy" decoding="async" alt="Illustration of a buyer intelligence tool: contract filters, a tile map of regions shaded by buyer count and a list of buyers with pipeline stages.">
+            </div>
+          </div>
+          <div class="case-body">
+            <p class="case-meta mono"><span>Case 04</span><span>GovTech / Sales intelligence</span></p>
+            <h3 id="case-buyermap" class="case-title">BuyerMap: finding and reaching public-sector buyers</h3>
+            <dl class="case-details">
+              <div><dt>Problem</dt><dd>Winning public-sector work depends on knowing which buyers purchase what, and reaching them before an opportunity becomes a crowded open bid.</dd></div>
+              <div><dt>The system</dt><dd>Outreach in three steps: pick a contract category to see its value and buyer count, choose a region to list every eligible buyer with a point of contact, then log calls and emails, move buyers through a pipeline to won and get reminders when a follow-up is due.</dd></div>
+              <div><dt>Key challenges</dt><dd>Linking contracts, regions and buyers so the right list appears instantly, keeping a per-buyer pipeline and follow-up schedule accurate across many contacts, and keeping a single-page interface fast on top of Laravel.</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>Inertia.js</li><li>PHP 8</li><li>MySQL</li></ul>
+          </div>
+        </article>
+
+        <!-- Company: anonymous letters, web + iOS -->
+        <article class="case reveal" style="--accent: var(--rose); --accent-deep: var(--rose-deep); --accent-tint: var(--rose-tint)" aria-labelledby="case-inkwell">
+          <div class="case-media">
+            <div class="browser">
+              <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+              <img src="img/illustrations/inkwell.svg" width="1600" height="900" loading="lazy" decoding="async" alt="Illustration of an anonymous letter-writing app: a letter addressed to a younger self, a feed of other letters and a private journal on a phone.">
+            </div>
+          </div>
+          <div class="case-body">
+            <p class="case-meta mono"><span>Case 05</span><span>Community / Web + iOS</span></p>
+            <h3 id="case-inkwell" class="case-title">Inkwell: a safe place for words people never send</h3>
+            <dl class="case-details">
+              <div><dt>Problem</dt><dd>People carry things they never said to a parent, a first love or their younger self, and want somewhere to write them down without being identified or judged.</dd></div>
+              <div><dt>The system</dt><dd>A React web app where anyone can write an anonymous letter and read other people's letters, with no signup needed. A companion iOS app adds a private journal, reactions and reporting, and sign-in with Apple and Google.</dd></div>
+              <div><dt>Key challenges</dt><dd>Keeping writing frictionless without accounts while protecting anonymity, moderating a public feed, and making a single-page React app discoverable through search.</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Technologies"><li>React</li><li>iOS app</li><li>Social sign-in</li><li>SEO for SPAs</li></ul>
+          </div>
+        </article>
+
+        <!-- Company: transport booking -->
+        <article class="case case-flip reveal" style="--accent: var(--teal); --accent-deep: var(--teal-deep); --accent-tint: var(--teal-tint)" aria-labelledby="case-ridecore">
+          <div class="case-media">
+            <div class="browser">
+              <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+              <img src="img/illustrations/ridecore.svg" width="1600" height="900" loading="lazy" decoding="async" alt="Illustration of a trip booking site with coach, taxi and limousine tabs and a booking form with an accessibility assistance option.">
+            </div>
+          </div>
+          <div class="case-body">
+            <p class="case-meta mono"><span>Case 06</span><span>Transportation / Booking</span></p>
+            <h3 id="case-ridecore" class="case-title">RideCore: one booking core for coach, taxi and limousine brands</h3>
+            <dl class="case-details">
+              <div><dt>Problem</dt><dd>One transport business serving three markets needed customers to search and book trips, and vendors to register, without maintaining three unrelated products.</dd></div>
+              <div><dt>The system</dt><dd>Three branded booking sites on a shared booking experience: trip search by origin, destination and date, passenger counts, accessibility assistance requests, customer accounts and vendor registration, with companion mobile apps.</dd></div>
+              <div><dt>Key challenges</dt><dd>Keeping one booking flow consistent across three brands with different vehicle types, while the Symfony backend and Vue frontend serve every brand from the same core.</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Technologies"><li>Symfony</li><li>Vue.js</li><li>MySQL</li><li>REST APIs</li></ul>
+          </div>
+        </article>
+
+        <!-- Company: earlier products -->
+        <div class="group reveal">
+          <header class="sub-head">
+            <h3 class="sub-title">More platforms</h3>
+            <p>Assessment, privacy automation, data and sports software.</p>
+          </header>
+          <ul class="card-grid card-grid-2">
+            <li class="card case-card" style="--accent: var(--rose); --accent-deep: var(--rose-deep)">
+              <img src="img/illustrations/planpath.svg" width="800" height="450" loading="lazy" decoding="async" alt="Illustration of a support plan cycle with assess, manage and prevent stages beside an assessment checklist.">
+              <div class="card-body">
+                <p class="card-kicker mono">Health / Assessment</p>
+                <h4>PlanPath: behaviour assessments and support plans</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>Practitioners writing behaviour assessments and support plans were assembling them by hand from scattered notes and documents.</dd></div>
+                  <div><dt>The system</dt><dd>A Laravel application that guides users through assess, manage and prevent stages and turns the data they collect into structured assessments and support plans, with sign-up and an in-app user guide.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Modelling a professional assessment method as structured data, and protecting sensitive personal information with strict authentication and access control.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>PHP</li><li>MySQL</li><li>Access control</li></ul>
+              </div>
+            </li>
+            <li class="card case-card" style="--accent: var(--sky); --accent-deep: var(--sky-deep)">
+              <img src="img/illustrations/afterlock.svg" width="800" height="450" loading="lazy" decoding="async" alt="Illustration of an inactivity countdown with 28 days left and a list of protected accounts with toggles.">
+              <div class="card-body">
+                <p class="card-kicker mono">Privacy / Automation</p>
+                <h4>Afterlock: removing accounts after inactivity</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>People want their social media and dating accounts removed if they become inactive, without depending on someone else to do it for them.</dd></div>
+                  <div><dt>The system</dt><dd>A Laravel subscription application where users register the accounts to protect and a trial period, and the service acts on their behalf when inactivity is detected.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Time-based automation that must be dependable: scheduled checks, background jobs that can be safely retried, and careful storage of account information users entrust to the service.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>Scheduled jobs</li><li>Queues</li><li>Subscriptions</li></ul>
+              </div>
+            </li>
+            <li class="card case-card" style="--accent: var(--amber); --accent-deep: var(--amber-deep)">
+              <img src="img/illustrations/lineage.svg" width="800" height="450" loading="lazy" decoding="async" alt="Illustration of a relationship graph linking regions, sites, groups, records and events.">
+              <div class="card-body">
+                <p class="card-kicker mono">Data / Visualisation</p>
+                <h4>Lineage Graph: historical records as relationship diagrams</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>Decades of historical records existed as separate datasets with no way to see how they relate to each other.</dd></div>
+                  <div><dt>The system</dt><dd>A Laravel and JavaScript application where administrators upload each dataset and the system renders the relationships between them as interactive diagrams and graphs.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Designing the relational model that links the datasets, validating file imports, and presenting connected data in a way non-technical users can read.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>JavaScript</li><li>MySQL</li><li>Data import</li></ul>
+              </div>
+            </li>
+            <li class="card case-card" style="--accent: var(--coral); --accent-deep: var(--coral-deep)">
+              <img src="img/illustrations/playboard.svg" width="800" height="450" loading="lazy" decoding="async" alt="Illustration of a football play drawn on a pitch with players and arrows.">
+              <div class="card-body">
+                <p class="card-kicker mono">Sports / SaaS</p>
+                <h4>Playboard: game planning tools for football coaches</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>Coaching staff plan games and run meetings on whiteboards and paper that are hard to share across a team.</dd></div>
+                  <div><dt>The system</dt><dd>An online whiteboard and meeting tool built for coaches, with the Laravel application behind a WordPress marketing site that handles pricing and registration.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Splitting the content-managed marketing site from the application cleanly, so each can change without breaking the other.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>WordPress</li><li>JavaScript</li></ul>
+              </div>
+            </li>
+          </ul>
         </div>
 
-        <!-- Right Section -->
-        <div class="about-right">
-            <h1 style="color: #f4a261">My Professional Skills</h1>
-            <div class="skill-bar">
-                <span>HTML</span>
-                <div class="progress"><div class="progress-fill" style="width: 98%;">98%</div></div>
-            </div>
-            <div class="skill-bar">
-                <span>Css/Bootstrap/Tailwind</span>
-                <div class="progress"><div class="progress-fill" style="width: 98%;">98%</div></div>
-            </div>
-            <div class="skill-bar">
-                <span>Agile/Scrum</span>
-                <div class="progress"><div class="progress-fill" style="width: 95%;">95%</div></div>
-            </div>
-            <div class="skill-bar">
-                <span>JavaScript/Jquery/React.js/Vue.js</span>
-                <div class="progress"><div class="progress-fill" style="width: 95%;">95%</div></div>
-            </div>
-            <div class="skill-bar">
-                <span>PHP/Laravel/Symfony/Cake</span>
-                <div class="progress"><div class="progress-fill" style="width: 98%;">98%</div></div>
-            </div>
-            <div class="skill-bar">
-                <span>Wordpress/Shopify/Webflow</span>
-                <div class="progress"><div class="progress-fill" style="width: 97%;">97%</div></div>
-            </div>
-            <div class="skill-bar">
-                <span>MySql/Sql Injections/Procedures</span>
-                <div class="progress"><div class="progress-fill" style="width: 95%;">95%</div></div>
-            </div>
-          
-            <div class="skill-bar">
-                <span>Version Control (GitHub/BitBucket)</span>
-                <div class="progress"><div class="progress-fill" style="width: 95%;">95%</div></div>
-            </div>
-            <div class="skill-bar">
-                <span>Server Management/linux</span>
-                <div class="progress"><div class="progress-fill" style="width: 95%;">98%</div></div>
-            </div>
-            <div class="skill-bar">
-                <span>Mean/Mern</span>
-                <div class="progress"><div class="progress-fill" style="width: 85%;">85%</div></div>
-            </div>
-            <div class="skill-bar">
-                <span>React Native</span>
-                <div class="progress"><div class="progress-fill" style="width: 75%;">75%</div></div>
-            </div>
-            <div class="skill-bar">
-                <span>AWS</span>
-                <div class="progress"><div class="progress-fill" style="width: 70%;">70%</div></div>
-            </div>
-
+        <!-- Company: mobile -->
+        <div class="group reveal">
+          <header class="sub-head">
+            <h3 class="sub-title">Mobile products</h3>
+            <p>Cross-platform apps in React Native and Flutter, backed by Laravel APIs.</p>
+          </header>
+          <ul class="card-grid card-grid-2">
+            <li class="card case-card" style="--accent: var(--coral); --accent-deep: var(--coral-deep)">
+              <img src="img/illustrations/settle.svg" width="900" height="506" loading="lazy" decoding="async" alt="Illustration of three phone screens: events, resource tiles and program categories.">
+              <div class="card-body">
+                <p class="card-kicker mono">Community services / iOS</p>
+                <h4>Settle: programs and services for newcomers</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>Newcomers and job seekers struggle to find the right employment, settlement and language programs, and paper-based processes slow them down.</dd></div>
+                  <div><dt>The system</dt><dd>An iOS app to discover employment, settlement, language, women's and youth programs, with an events feed, personalised resources, announcements and reminders, as part of a wider connected client experience.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Secure access to personal client information, keeping program and event content current, and replacing paperwork with digital steps.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>iOS</li><li>Secure client access</li><li>Notifications</li></ul>
+              </div>
+            </li>
+            <li class="card case-card" style="--accent: var(--teal); --accent-deep: var(--teal-deep)">
+              <img src="img/illustrations/candor.svg" width="900" height="506" loading="lazy" decoding="async" alt="Illustration of three phone screens: nearby places, a chat with a business and a karma leaderboard.">
+              <div class="card-body">
+                <p class="card-kicker mono">Consumer / Android</p>
+                <h4>Candor: private, kind feedback for local businesses</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>People notice things they would like to praise or fix at places they visit, but public reviews feel too heavy and surveys are a chore.</dd></div>
+                  <div><dt>The system</dt><dd>An Android app to find any business, share a compliment or suggestion privately and anonymously with optional AI help to phrase it kindly, and continue the conversation when the business replies. Karma points, streaks and a leaderboard reward helpful feedback.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Keeping users anonymous by default while still allowing two-way conversation, AI assistance that keeps the user's own voice, and rewards that encourage useful rather than noisy feedback.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>Android</li><li>AI-assisted writing</li><li>Chat</li><li>Gamification</li></ul>
+              </div>
+            </li>
+            <li class="card case-card" style="--accent: var(--rose); --accent-deep: var(--rose-deep)">
+              <img src="img/illustrations/nearby.svg" width="900" height="506" loading="lazy" decoding="async" alt="Illustration of three phone screens: a map with nearby people, a profile and a community feed.">
+              <div class="card-body">
+                <p class="card-kicker mono">Social / iOS + Android</p>
+                <h4>Nearby: meeting people close by</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>Meeting new people locally is hard without a shared space built around where you are.</dd></div>
+                  <div><dt>The system</dt><dd>A location-aware community app to discover people nearby on a map, join the community and view detailed profiles and feeds, with a Laravel API behind a React Native client.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Location-based discovery that respects user privacy, and one API serving both iOS and Android.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>React Native</li><li>Laravel API</li><li>Geolocation</li></ul>
+              </div>
+            </li>
+            <li class="card case-card" style="--accent: var(--sky); --accent-deep: var(--sky-deep)">
+              <img src="img/illustrations/pitchtalk.svg" width="900" height="506" loading="lazy" decoding="async" alt="Illustration of three phone screens: a vocabulary lesson, a quiz and team progress.">
+              <div class="card-body">
+                <p class="card-kicker mono">Education / iOS + Android</p>
+                <h4>Pitchtalk: language learning for football teams</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>Football teams with players from different countries need a simple way to learn a common language.</dd></div>
+                  <div><dt>The system</dt><dd>A language learning app designed for football teams and players, with a Laravel API behind a React Native client.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Fitting learning into a team context, and delivering the same content to iOS and Android from one API.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>React Native</li><li>Laravel API</li><li>Education</li></ul>
+              </div>
+            </li>
+            <li class="card case-card" style="--accent: var(--amber); --accent-deep: var(--amber-deep)">
+              <img src="img/illustrations/circle.svg" width="900" height="506" loading="lazy" decoding="async" alt="Illustration of three phone screens: groups, reminders and a calendar.">
+              <div class="card-body">
+                <p class="card-kicker mono">Community / iOS + Android</p>
+                <h4>Circle: a home for members and groups</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>Community groups need one place for their members to stay connected.</dd></div>
+                  <div><dt>The system</dt><dd>A community app for members and groups, with a Laravel API behind a React Native client.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Group membership and permissions, and keeping both mobile platforms in step with one backend.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>React Native</li><li>Laravel API</li><li>Communities</li></ul>
+              </div>
+            </li>
+          </ul>
         </div>
-    </div>
-</section>
- <!-- Services Section -->
-<section id="services" style="background-color: black">
-    <div class="container">
-        <h2 style="color: #f4a261!important;" class="section-title">What I Do</h2>
-        <div class="carousel">
-            <div class="service-card">
-                <i class="fas fa-code fa-3x"></i>
-                <h3>Web Development</h3>
-                <p>Custom Websites and Web Apps using Laravel, React, and Shopify.</p>
-            </div>
 
-            <div class="service-card">
-                <i class="fas fa-cogs fa-3x"></i>
-                <h3>API Development</h3>
-                <p>RESTful and GraphQL APIs for mobile and web applications.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-shopping-cart fa-3x"></i>
-                <h3>E-commerce Solutions</h3>
-                <p>Online stores built on Shopify, WooCommerce, and Custom Platforms.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-mobile-alt fa-3x"></i>
-                <h3>Mobile App Development</h3>
-                <p>Cross-platform apps using React Native.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-chart-line fa-3x"></i>
-                <h3>SEO Optimization</h3>
-                <p>Boost website ranking with SEO-friendly strategies.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-shield-alt fa-3x"></i>
-                <h3>Web Security & Performance</h3>
-                <p>Website security, performance optimization, and malware removal.</p>
-            </div>
+        <!-- Company: more shipped work -->
+        <div class="group reveal">
+          <header class="sub-head">
+            <h3 class="sub-title">More shipped work</h3>
+            <p>E-commerce, ordering, learning, wellbeing and marketing platforms.</p>
+          </header>
+          <ul class="card-grid card-grid-2">
+            <li class="card case-card" style="--accent: var(--rose); --accent-deep: var(--rose-deep)">
+              <img src="img/illustrations/wellbeing.svg" width="800" height="450" loading="lazy" decoding="async" alt="Illustration of a wellbeing app: a daily draw card, an English and French switch and a grid of videos.">
+              <div class="card-body">
+                <p class="card-kicker mono">Wellbeing / Bilingual</p>
+                <h4>Wellbeing platform: daily practice in two languages</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>A somatic self-awareness practice needed to deliver daily exercises, guides and video sessions to members in English and French.</dd></div>
+                  <div><dt>The system</dt><dd>A Laravel and Alpine.js platform with bilingual content, a once-a-day draw, downloadable reference guides, video sessions and member accounts.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Managing content in two languages, enforcing one draw per day per member, and keeping downloads and videos behind member accounts.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>Alpine.js</li><li>Localisation</li></ul>
+              </div>
+            </li>
+            <li class="card case-card" style="--accent: var(--coral); --accent-deep: var(--coral-deep)">
+              <img src="img/illustrations/stickers.svg" width="800" height="450" loading="lazy" decoding="async" alt="Illustration of a sticker shop: sticker designs beside size and finish options and an add to cart button.">
+              <div class="card-body">
+                <p class="card-kicker mono">Print / E-commerce</p>
+                <h4>Sticker print store: custom stickers and vinyl prints</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>Customers ordering custom stickers want to choose a size and material and order online instead of emailing back and forth.</dd></div>
+                  <div><dt>The system</dt><dd>An online print shop for custom stickers and premium vinyl prints up to A4.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Product options that change the price, and collecting each customer's artwork with their order.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>E-commerce</li><li>Product options</li></ul>
+              </div>
+            </li>
+            <li class="card case-card" style="--accent: var(--amber); --accent-deep: var(--amber-deep)">
+              <img src="img/illustrations/recipes.svg" width="800" height="450" loading="lazy" decoding="async" alt="Illustration of a recipe page: a plated dish, star rating, ingredients and subscribe button.">
+              <div class="card-body">
+                <p class="card-kicker mono">Food / Community</p>
+                <h4>Recipe community: recipes, subscriptions and reviews</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>Home cooks want reliable recipes and a community to share them with.</dd></div>
+                  <div><dt>The system</dt><dd>A recipe web app with featured dishes, subscriptions, reviews and a community area.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Structuring recipes for browsing, handling subscriptions, and keeping reviews useful.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>Subscriptions</li><li>Reviews</li></ul>
+              </div>
+            </li>
+            <li class="card case-card" style="--accent: var(--coral); --accent-deep: var(--coral-deep)">
+              <img src="img/illustrations/restaurant.svg" width="800" height="450" loading="lazy" decoding="async" alt="Illustration of a restaurant menu with prices and an order summary.">
+              <div class="card-body">
+                <p class="card-kicker mono">Food / Ordering</p>
+                <h4>Restaurant ordering: menu to checkout</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>A restaurant needed customers to browse its menu and order online instead of only by phone.</dd></div>
+                  <div><dt>The system</dt><dd>A Laravel site with the restaurant's menu and online ordering.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Keeping menus and prices easy for staff to update, and making ordering quick on a phone.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>Online ordering</li></ul>
+              </div>
+            </li>
+            <li class="card case-card" style="--accent: var(--rose); --accent-deep: var(--rose-deep)">
+              <img src="img/illustrations/fashion.svg" width="800" height="450" loading="lazy" decoding="async" alt="Illustration of a fashion store product grid with prices and add buttons.">
+              <div class="card-body">
+                <p class="card-kicker mono">Retail / E-commerce</p>
+                <h4>Fashion stores: one custom, one on Shopify</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>Two fashion brands needed online stores, with different needs for control and speed to launch.</dd></div>
+                  <div><dt>The system</dt><dd>One custom Laravel store and one Shopify store, each with its own catalogue and checkout.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Choosing custom code or a platform for each brand, and keeping product data and imagery consistent.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>Shopify</li><li>E-commerce</li></ul>
+              </div>
+            </li>
+            <li class="card case-card" style="--accent: var(--teal); --accent-deep: var(--teal-deep)">
+              <img src="img/illustrations/learning.svg" width="800" height="450" loading="lazy" decoding="async" alt="Illustration of a course video player with module progress.">
+              <div class="card-body">
+                <p class="card-kicker mono">Education / LMS</p>
+                <h4>Learning platform: portfolio and courses in one place</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>A training business needed to show its work and deliver courses from a single site.</dd></div>
+                  <div><dt>The system</dt><dd>A Laravel platform that combines a portfolio site with learning management for courses and lessons.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Access control for enrolled learners, and organising course content into modules.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>LMS</li></ul>
+              </div>
+            </li>
+            <li class="card case-card" style="--accent: var(--sky); --accent-deep: var(--sky-deep)">
+              <img src="img/illustrations/pagebuilder.svg" width="800" height="450" loading="lazy" decoding="async" alt="Illustration of a page builder with a block palette and a page canvas.">
+              <div class="card-body">
+                <p class="card-kicker mono">Marketing / Tools</p>
+                <h4>Landing page builder: pages without a developer</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>Marketing teams need landing pages quickly, without waiting on a developer for each one.</dd></div>
+                  <div><dt>The system</dt><dd>A Laravel web app for creating and publishing static landing pages.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Producing fast static output, and keeping every page on-brand.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>Static pages</li></ul>
+              </div>
+            </li>
+            <li class="card case-card" style="--accent: var(--amber); --accent-deep: var(--amber-deep)">
+              <img src="img/illustrations/contentsites.svg" width="800" height="450" loading="lazy" decoding="async" alt="Illustration of a content website with a hero image, article and latest posts.">
+              <div class="card-body">
+                <p class="card-kicker mono">Marketing / Content</p>
+                <h4>Content sites: company and editorial websites</h4>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>Companies need websites their own teams can update.</dd></div>
+                  <div><dt>The system</dt><dd>Company and content websites built on WordPress and React.</dd></div>
+                  <div><dt>Key challenges</dt><dd>Editor-friendly content management, with good performance and search visibility.</dd></div>
+                </dl>
+                <ul class="tags" aria-label="Technologies"><li>WordPress</li><li>React</li><li>SEO</li></ul>
+              </div>
+            </li>
+          </ul>
         </div>
-    </div>
-</section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" style="background-color: black;">
-        <h2 style="color: #f4a261!important;" class="section-title">Portfolio</h2>
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="web">Web Development</button>
-            <button class="filter-btn" data-filter="app">App Development</button>
-        </div>
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card" data-category="web">
-                <img src="img/recipal.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>Recipal</h3>
-                    <p>Food Recipies Web App (Laravel)</p>
-
-                </div>
-                <a href="https://recipal.mhtechnologies.us/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-            <!-- Project 2 -->
-            <div class="project-card" data-category="web">
-                <img src="img/behaviour.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>Positive Behaviour Support</h3>
-                    <p>Behaviour Help Web App built in Laravel</p>
-
-                </div>
-                <a href="https://app.behaviourhelp.com/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-            <!-- Project 3 -->
-
-            <!-- Add more projects as needed -->
-            <div class="project-card" data-category="web">
-                <img src="img/clipboard.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>Clipboard Nation</h3>
-                    <p>Web app for Football teams to manage meetings (laravel, Wordpress)</p>
-
-                </div>
-                <a href="https://www.clipboardnation.com/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-
-
-            <div class="project-card" data-category="app">
-                <img src="img/goalingo.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>Goalingo</h3>
-                    <p>App for football teams to learn languages Laravel, React Native</p>
-
-                </div>
-                <a href="#" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-            <div class="project-card" data-category="app">
-                <img src="img/jive.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>Jive Friends</h3>
-                    <p>Friends Community App bult in laravel and React Native</p>
-
-                </div>
-                <a href="https://apps.apple.com/us/app/jive-friends/id6466036309" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/lionpro.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>LionProDev</h3>
-                    <p>Portfolio and Learning management Web app built in laravel</p>
-
-                </div>
-                <a href="https://lionprodev.com/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/mh.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>MhTechnologies</h3>
-                    <p>Portfolio Website (laravel,react)</p>
-
-                </div>
-                <a href="https://mhtechnologies.us/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/sociallock.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>Socialock</h3>
-                    <p>Web app to secure digital footprints (laravel).</p>
-
-                </div>
-                <a href="https://socialock.co/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/styleup.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>MStyleUp</h3>
-                    <p>E-commerce Website (laravel)</p>
-
-                </div>
-                <a href="https://m.mstyleup.com/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-            <div class="project-card" data-category="app">
-                <img src="img/weminder.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>WeMinder</h3>
-                    <p>Community app Laravel, React Native</p>
-
-                </div>
-                <a href="#" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/almufeed.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>Almufeed</h3>
-                    <p>E-commerce platform built in Laravel</p>
-
-                </div>
-                <a href="https://almufeed.com.pk/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/bagsy.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>Bagsy ny</h3>
-                    <p>Ecommerce Shopify</p>
-
-                </div>
-                <a href="https://bagsyny.com/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/boyscout.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>BoyScout</h3>
-                    <p>Web app to manage history data into graphs (Laravel, Js)</p>
-
-                </div>
-                <a href="https://mapper.boyscoutimages.org/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/vital.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>Vital roots</h3>
-                    <p>Food delivery web app (laravel)</p>
-
-                </div>
-                <a href="https://vitalroots.fit/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-            <div class="project-card" data-category="web">
-                <img src="img/busrider.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>Rider app for Buses</h3>
-                    <p>Uber/Creem like app buit in Symfony,vue.js</p>
-
-                </div>
-                <a href="https://emotorcoach.net/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/erideshare.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>Rider app for Taxis</h3>
-                    <p>Symfony, Vue.js</p>
-
-                </div>
-                <a href="https://erideshare.net/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/elimousines.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>Rider app for Limousines</h3>
-                    <p>Symfony, Vue.js</p>
-
-                </div>
-                <a href="https://elimousines.net/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/pixium.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>Pixium</h3>
-                    <p>Static Web app for landing pages (laravel).</p>
-
-                </div>
-                <a href="https://pixium.mhtechnologies.us/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/picturethestar.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>Picture The Stars</h3>
-                    <p>Wordpress php site</p>
-
-                </div>
-                <a href="https://picturethestars.co.uk/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-
-            <div class="project-card" data-category="web">
-                <img src="img/isgpr.PNG" alt="Web Development Project">
-                <div class="project-info">
-                    <h3>ISGPR</h3>
-                    <p>Strategic Communication Solutions</p>
-
-                </div>
-                <a href="https://picturethestars.co.uk/" target="_blank" class="link-icon">&#128279;</a>
-            </div>
-        </div>
+      </div>
     </section>
 
+    <!-- Approach -->
+    <section class="section approach" id="approach" aria-labelledby="approach-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-index mono">02</p>
+          <h2 id="approach-title" class="section-title">How I approach engineering</h2>
+          <p class="section-intro">Good architecture is mostly a series of well-reasoned trade-offs. These are the ones I spend the most time on.</p>
+        </header>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-                <h2>Syed Furqan Gillani</h2>
-                <p>Software Engineer | Full Stack Developer</p>
+        <ol class="principles">
+          <li class="reveal" style="--c: var(--teal)"><h3>Start from the business process, not the framework.</h3><p>I map who does what, what can go wrong and what must never be lost before choosing tools. The data model usually falls out of that conversation.</p></li>
+          <li class="reveal" style="--c: var(--amber)"><h3>Choose boring technology on purpose.</h3><p>A well-structured Laravel or Symfony monolith beats a premature microservice split for most teams. I add moving parts only when a real constraint asks for them.</p></li>
+          <li class="reveal" style="--c: var(--coral)"><h3>Design the data before the screens.</h3><p>Schemas, indexes and constraints outlive every UI rewrite. I put correctness rules in the database where they belong and measure queries before optimising them.</p></li>
+          <li class="reveal" style="--c: var(--sky)"><h3>Keep slow work out of the request.</h3><p>Emails, payment callbacks, imports and third-party calls go to queues with retries, so a user never waits on someone else's API.</p></li>
+          <li class="reveal" style="--c: var(--rose)"><h3>Treat security as a default, not a feature.</h3><p>Parameterised queries, validated input, least-privilege access and secrets out of source control. Sensitive data gets extra care from the first migration.</p></li>
+          <li class="reveal" style="--c: var(--teal)"><h3>Make production boring.</h3><p>Containerised builds, CI/CD pipelines that test before they ship, logs you can actually search and infrastructure configured on purpose. If it can't be deployed safely on a Friday, it isn't finished.</p></li>
+        </ol>
+
+        <div class="layers reveal" data-layers>
+          <div class="layers-stack" role="tablist" aria-label="Application layers" aria-orientation="vertical">
+            <button class="layer" role="tab" id="tab-interface" aria-controls="panel-interface" aria-selected="true" style="--c: var(--sky)"><span class="mono">L1</span> Interface</button>
+            <button class="layer" role="tab" id="tab-api" aria-controls="panel-api" aria-selected="false" tabindex="-1" style="--c: var(--teal)"><span class="mono">L2</span> API &amp; domain</button>
+            <button class="layer" role="tab" id="tab-async" aria-controls="panel-async" aria-selected="false" tabindex="-1" style="--c: var(--coral)"><span class="mono">L3</span> Async &amp; integrations</button>
+            <button class="layer" role="tab" id="tab-data" aria-controls="panel-data" aria-selected="false" tabindex="-1" style="--c: var(--amber)"><span class="mono">L4</span> Data</button>
+            <button class="layer" role="tab" id="tab-ops" aria-controls="panel-ops" aria-selected="false" tabindex="-1" style="--c: var(--rose)"><span class="mono">L5</span> Infrastructure</button>
+          </div>
+          <div class="layers-panels">
+            <div class="layer-panel" role="tabpanel" id="panel-interface" aria-labelledby="tab-interface" tabindex="0">
+              <h3>Interface</h3>
+              <p>React or Vue on the web, often through Inertia or Alpine.js on Laravel, and React Native or Flutter on mobile. Clients talk to the same API, so business rules live in one place and the clients stay thin.</p>
+              <p class="q"><span class="mono">I ask:</span> Which screens are read-heavy, which are transactional, and what happens when the network drops?</p>
             </div>
-    
-           
-           
-        </div>
-    
-        <div class="footer-bottom">
-            <p>© 2025 furqangillani. All Rights Reserved.</p>
-            <div class="footer-social">
-            
-                <div class="social-links">
-                    <br>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                   
-                </div>
+            <div class="layer-panel" role="tabpanel" id="panel-api" aria-labelledby="tab-api" tabindex="0" hidden>
+              <h3>API &amp; domain</h3>
+              <p>REST endpoints in Laravel, Symfony or Node.js, with authentication, authorisation and validation at the boundary and domain logic kept out of controllers.</p>
+              <p class="q"><span class="mono">I ask:</span> What are the core entities, who may change them, and which operations must be idempotent?</p>
             </div>
-            <a href="#" class="back-to-top">↑ Back to Top</a>
+            <div class="layer-panel" role="tabpanel" id="panel-async" aria-labelledby="tab-async" tabindex="0" hidden>
+              <h3>Async &amp; integrations</h3>
+              <p>Queues backed by Redis for notifications, payments, imports, data feeds and scheduled work. Every job is safe to retry and every integration has a timeout.</p>
+              <p class="q"><span class="mono">I ask:</span> What happens if this third party is down for an hour?</p>
+            </div>
+            <div class="layer-panel" role="tabpanel" id="panel-data" aria-labelledby="tab-data" tabindex="0" hidden>
+              <h3>Data</h3>
+              <p>MySQL or PostgreSQL for transactional data, with deliberate indexes, constraints and, where they earn their place, stored procedures. MongoDB when the data really is document-shaped, SQLite on the device for offline mobile data, Firebase or Supabase when a product needs realtime sync and auth quickly, and Redis for caching hot reads.</p>
+              <p class="q"><span class="mono">I ask:</span> Which queries will be slow at ten times today's volume?</p>
+            </div>
+            <div class="layer-panel" role="tabpanel" id="panel-ops" aria-labelledby="tab-ops" tabindex="0" hidden>
+              <h3>Infrastructure</h3>
+              <p>AWS and Azure environments, Docker containers, CI/CD pipelines that build, test and deploy on every merge, Linux servers, environment configuration kept out of code, and monitoring that tells you about a problem before a customer does.</p>
+              <p class="q"><span class="mono">I ask:</span> How do we roll back, and how long does it take?</p>
+            </div>
+          </div>
         </div>
-    </footer>
-    <script>
-        // Preloader
-        $(window).on("load", function() {
-            $("#preloader").fadeOut("slow");
-        });
+      </div>
+    </section>
 
-        // Typed.js for banner text
-        new Typed("#typed", {
-            strings: ["Crafting Digital Solutions, Empowering Ideas.", "Transforming Ideas into Digital Masterpieces."],
-            typeSpeed: 50,
-            backSpeed: 30,
-            loop: true
-        });
+    <!-- Capabilities -->
+    <section class="section capabilities" id="capabilities" aria-labelledby="cap-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-index mono">03</p>
+          <h2 id="cap-title" class="section-title">Technical capabilities</h2>
+          <p class="section-intro">Grouped by the kind of problem they solve. <span class="key-primary">Highlighted</span> items are where I do most of my work.</p>
+        </header>
 
-        // Theme Toggle
-        document.getElementById("theme-toggle").onclick = function () {
-            document.body.classList.toggle("dark-mode");
-        };
-    </script>
-    <script>
-        window.addEventListener('scroll', function () {
-    const cards = document.querySelectorAll('.service-card');
-    cards.forEach(card => {
-        const cardPos = card.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
+        <div class="cap-grid">
+          <section class="cap reveal" style="--c: var(--teal)" aria-labelledby="cap-arch">
+            <h3 id="cap-arch"><span class="cap-icon mono" aria-hidden="true">A</span> Application architecture</h3>
+            <p>Shaping systems before they are built.</p>
+            <ul class="tags"><li class="is-primary">System design</li><li class="is-primary">Domain modelling</li><li>API design</li><li>Service boundaries</li><li>Technical documentation</li></ul>
+          </section>
+          <section class="cap reveal" style="--c: var(--coral)" aria-labelledby="cap-back">
+            <h3 id="cap-back"><span class="cap-icon mono" aria-hidden="true">B</span> Backend engineering</h3>
+            <p>Where most of my years have gone.</p>
+            <ul class="tags"><li class="is-primary">PHP</li><li class="is-primary">Laravel</li><li class="is-primary">Symfony</li><li>CakePHP</li><li>Node.js</li><li>Express</li><li>REST</li><li>GraphQL</li><li>Queues &amp; Redis</li><li>Auth</li><li>Unit &amp; integration testing</li></ul>
+          </section>
+          <section class="cap reveal" style="--c: var(--sky)" aria-labelledby="cap-front">
+            <h3 id="cap-front"><span class="cap-icon mono" aria-hidden="true">C</span> Frontend engineering</h3>
+            <p>Interfaces that stay maintainable.</p>
+            <ul class="tags"><li class="is-primary">JavaScript</li><li class="is-primary">Vue.js</li><li class="is-primary">React</li><li>Inertia.js</li><li>Alpine.js</li><li>Tailwind CSS</li><li>Bootstrap</li></ul>
+          </section>
+          <section class="cap reveal" style="--c: var(--amber)" aria-labelledby="cap-data">
+            <h3 id="cap-data"><span class="cap-icon mono" aria-hidden="true">D</span> Databases &amp; data</h3>
+            <p>Models that hold up under change.</p>
+            <ul class="tags"><li class="is-primary">MySQL</li><li class="is-primary">PostgreSQL</li><li class="is-primary">Schema design</li><li>Query optimisation</li><li>Stored procedures</li><li>MongoDB</li><li>SQLite</li><li>Firebase</li><li>Supabase</li></ul>
+          </section>
+          <section class="cap reveal" style="--c: var(--rose)" aria-labelledby="cap-ops">
+            <h3 id="cap-ops"><span class="cap-icon mono" aria-hidden="true">E</span> Cloud &amp; DevOps</h3>
+            <p>Getting it to production and keeping it there.</p>
+            <ul class="tags"><li class="is-primary">AWS</li><li class="is-primary">Azure</li><li class="is-primary">Docker</li><li class="is-primary">CI/CD pipelines</li><li>Linux servers</li><li>Git, GitHub, Bitbucket</li><li>Monitoring</li><li>Application security</li></ul>
+          </section>
+          <section class="cap reveal" style="--c: var(--teal)" aria-labelledby="cap-mobile">
+            <h3 id="cap-mobile"><span class="cap-icon mono" aria-hidden="true">F</span> Mobile development</h3>
+            <p>One API, several clients.</p>
+            <ul class="tags"><li class="is-primary">React Native</li><li class="is-primary">Flutter</li><li>Dart</li><li>App Store &amp; Play Store releases</li></ul>
+          </section>
+          <section class="cap reveal" style="--c: var(--sky)" aria-labelledby="cap-platforms">
+            <h3 id="cap-platforms"><span class="cap-icon mono" aria-hidden="true">G</span> Commerce &amp; CMS</h3>
+            <p>Custom builds, or an existing platform when that is the right answer.</p>
+            <ul class="tags"><li class="is-primary">Custom e-commerce</li><li class="is-primary">POS &amp; inventory</li><li>Shopify</li><li>WordPress</li><li>Webflow</li></ul>
+          </section>
+          <section class="cap reveal" style="--c: var(--rose)" aria-labelledby="cap-ai">
+            <h3 id="cap-ai"><span class="cap-icon mono" aria-hidden="true">I</span> AI &amp; automation</h3>
+            <p>Putting models to work inside real products.</p>
+            <ul class="tags"><li class="is-primary">AI document pipelines</li><li class="is-primary">LLM integration</li><li>AI-assisted writing</li><li>Workflow automation</li><li>Scheduled &amp; background jobs</li></ul>
+          </section>
+          <section class="cap reveal" style="--c: var(--amber)" aria-labelledby="cap-lead">
+            <h3 id="cap-lead"><span class="cap-icon mono" aria-hidden="true">H</span> Technical leadership</h3>
+            <p>Delivery, not just code.</p>
+            <ul class="tags"><li class="is-primary">Requirements analysis</li><li class="is-primary">Technical planning</li><li>Project management</li><li>SDLC</li><li>Agile &amp; Scrum</li><li>Code review</li></ul>
+          </section>
+        </div>
+      </div>
+    </section>
 
-        if (cardPos < windowHeight - 100) {
-            card.classList.add('show');
-        }
-    });
-});
+    <!-- About -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-photo reveal">
+          <img src="img/work/furqan.webp" width="480" height="471" loading="lazy" decoding="async" alt="Portrait of Syed Furqan Gillani">
+        </div>
+        <div class="about-copy reveal">
+          <p class="section-index mono">04</p>
+          <h2 id="about-title" class="section-title">About</h2>
+          <p class="about-lead">I'm Furqan, a software engineer who has spent around eight years building complete products: the database, the API, the interface and the server it all runs on.</p>
+          <p>Most of my work has been in PHP with Laravel and Symfony, alongside JavaScript on the frontend with Vue and React, and React Native and Flutter on mobile. I have built bidding and sales tools, point of sale and e-commerce systems, booking platforms, assessment tools and community apps, usually as the person responsible for turning a business requirement into something that works in production. I also run the DevOps side: AWS and Azure environments, Docker, and CI/CD pipelines that get code from a merge to production safely.</p>
+          <p>That end-to-end exposure is why I now focus on architecture. I like the part of a project where the requirements are still fuzzy and a few early decisions about data, boundaries and infrastructure will decide how easy everything after it is. I'm currently going deeper on Node.js and the MERN stack.</p>
+          <dl class="about-facts">
+            <div><dt>Education</dt><dd>MS Computer Science, Air University <span class="mono">2016 to 2018</span></dd><dd>BS Computer Science, Superior College <span class="mono">2014 to 2016</span></dd></div>
+            <div><dt>Based in</dt><dd>Lahore, Pakistan</dd><dd>Working with teams worldwide</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
 
-    </script>
-    <script>
-        const filterButtons = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
+    <!-- Contact -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-index mono reveal">05</p>
+          <h2 id="contact-title" class="contact-title reveal">Have a system to design, a product to build, or a role to fill?</h2>
+          <p class="contact-lede reveal">I'm open to senior engineering and solution architecture roles, and to working with founders and businesses on new products. Tell me what you are trying to solve.</p>
+        </div>
+        <ul class="contact-cards reveal">
+          <li style="--c: var(--teal)"><a href="mailto:furqan7853@gmail.com"><span class="mono">Email</span><strong>furqan7853@gmail.com</strong></a></li>
+          <li style="--c: var(--sky)"><a href="tel:+923407853663"><span class="mono">Phone</span><strong>+92 340 7853663</strong></a></li>
+          <li style="--c: var(--rose)"><a href="https://www.linkedin.com/in/syed-furqan-gillani-34a6a8186/" target="_blank" rel="noopener"><span class="mono">LinkedIn</span><strong>in/syed-furqan-gillani</strong></a></li>
+          <li style="--c: var(--coral)"><a href="https://github.com/furqangillani12" target="_blank" rel="noopener"><span class="mono">GitHub</span><strong>github.com/furqangillani12</strong></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        document.querySelector('.filter-btn.active').classList.remove('active');
-        button.classList.add('active');
-
-        const filter = button.dataset.filter;
-
-        projectCards.forEach(card => {
-            if (filter === 'all' || card.dataset.category === filter) {
-                card.style.display = 'block';
-                setTimeout(() => {
-                    card.style.opacity = '1';
-                }, 200);
-            } else {
-                card.style.opacity = '0';
-                setTimeout(() => {
-                    card.style.display = 'none';
-                }, 200);
-            }
-        });
-    });
-});
-const backToTop = document.querySelector('.back-to-top');
-
-backToTop.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
-    </script>
-    <script>
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-        const navLinks = document.querySelector('.nav-links');
-        navLinks.classList.toggle('active');
-    });
-   </script>
-<script>
-    // Portfolio Filtering
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all buttons
-            document.querySelector('.filter-btn.active').classList.remove('active');
-            // Add active class to the clicked button
-            button.classList.add('active');
-
-            const filter = button.dataset.filter;
-
-            // Filter projects
-            projectCards.forEach(card => {
-                if (filter === 'all' || card.dataset.category === filter) {
-                    card.style.display = 'block';
-                    setTimeout(() => {
-                        card.style.opacity = '1';
-                    }, 200);
-                } else {
-                    card.style.opacity = '0';
-                    setTimeout(() => {
-                        card.style.display = 'none';
-                    }, 200);
-                }
-            });
-        });
-    });
-</script>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span data-year>2026</span> Syed Furqan Gillani</p>
+      <p>Solution Architect / Full Stack Software Engineer</p>
+      <a class="link-up" href="#top">Back to top</a>
+    </div>
+  </footer>
 </body>
-
 </html>
