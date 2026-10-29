@@ -812,8 +812,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .about-photo::before { inset: 18px -18px -18px 18px; background: var(--teal); }
 .about-photo::after { width: 70px; height: 70px; top: -16px; left: -16px; background: var(--amber); border-radius: 14px; }
-.about-photo img { width: 100%; border-radius: 16px; filter: grayscale(1) contrast(1.05); transition: filter .8s var(--ease); }
-.about-photo:hover img { filter: grayscale(0); }
+.about-photo img { width: 100%; border-radius: 16px; filter: grayscale(1) contrast(1.05); }
 .about-copy .section-title { margin: var(--s-3) 0 var(--s-5); }
 .about-lead { font-family: var(--f-display); font-weight: 500; font-size: clamp(1.3rem, 2.1vw, 1.65rem); line-height: 1.32; letter-spacing: -.01em; }
 .about-copy p + p { margin-top: var(--s-4); }
